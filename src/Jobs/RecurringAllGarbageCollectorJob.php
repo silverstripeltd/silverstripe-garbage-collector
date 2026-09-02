@@ -48,7 +48,7 @@ class RecurringAllGarbageCollectorJob extends AbstractQueuedJob
         return sprintf("Garbage Collection processing for all collectors");
     }
 
-    public function getJobType(): int
+    public function getJobType(): string
     {
         return QueuedJob::QUEUED;
     }
